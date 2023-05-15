@@ -34,16 +34,3 @@ public class Loops {
 
     }
 }
-
-// Задание на почитать - инкремент
-
-// ссылочные типы и типы значения
-//int[] num = {1, 2, 3, 4};
-//
-//        for (int x: num) {
-//                x++;
-//                }
-//
-//                for (int x: num) {
-//                System.out.println(x);
-//                }
