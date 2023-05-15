@@ -32,5 +32,6 @@ public class Loops {
             System.out.println( test.charAt(i) );
         }
 
+
     }
 }

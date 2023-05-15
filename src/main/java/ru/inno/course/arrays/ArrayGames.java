@@ -49,7 +49,6 @@ public class ArrayGames {
         Student greg = new Student("Greg", "312", 22, "male", "History", false);
         group[2] = greg;
 
-
         System.out.println(mary.name);
         // ===== Аналогично
         System.out.println(group[1].name);
@@ -104,16 +103,5 @@ public class ArrayGames {
         Car[] garage2 = new Car[5];
         garage2[0] = car1;
 
-
-
-
-
-
     }
-
 }
-
-// задача про массив строк
-// задача про массив чисел
-// задача про массив объектов
-// nested array
