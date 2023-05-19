@@ -19,6 +19,5 @@ public class MyProgram {
         iphone.brand = "Apple";
         iphone.model = "5S";
         iphone.os = "iOs";
-
     }
 }
