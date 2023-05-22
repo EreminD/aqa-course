@@ -6,6 +6,8 @@ public class homework2 {
         String city = "Великий Новгород";
         //             01234...      14
 
+        city.toLowerCase();
+
 //        System.out.println( city.isEmpty() ); // пустая ли строка
 //        System.out.println( city.isBlank() ); // пустая ли строка, либо только пробел
 //        System.out.println( city.substring(0, 14) ); // отрезать строку [x;y)
