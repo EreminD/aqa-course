@@ -65,4 +65,11 @@
 - Игроку с id=10 – 5 очков
 
 - Выведите на экран 3х лучших игроков турнира. 
--На первом месте должен быть игрок с максимальным результатом 
+- На первом месте должен быть игрок с максимальным результатом 
+
+## 7. Со звездочкой Имплементация
+- Скопируйте к себе класс интерфейса `Calculator` https://github.com/EreminD/aqa-course/blob/main/src/main/java/ru/inno/course/collection/calculator/Calculator.java
+- Скопируйте к себе класс `CalculatorTest` https://github.com/EreminD/aqa-course/blob/main/src/main/java/ru/inno/course/collection/calculator/CalculatorTest.java
+- Создайте класс `MyCalculator`, который имплементирует интерфейс Calculator
+- В классе `CalculatorTest` в строке, где создается переменная `calculator` подставьте, вместо `null` создание вашего калькудятора
+- В классе `MyCalculator` реализуйте все методы интерфейса так, чтобы код из `CalculatorTest` везде печатал `true`
