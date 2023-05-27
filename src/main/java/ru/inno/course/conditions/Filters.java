@@ -5,7 +5,6 @@ public class Filters {
     public static void main(String[] args) {
 
         Movie[] movies = new Movie[50];
-        // сгенеритьь тестовые данные
         for (int i = 0; i < 50; i++) {
             movies[i] = new Movie("Фильм_" + i, 1965 + i, i % 3 == 0);
         }
