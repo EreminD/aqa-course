@@ -6,7 +6,7 @@ LocalDate publishDate = LocalDate.now().minusDays(1);
 LocalTime publishTime = LocalTime.now().minusHours(5);
 LocalDateTime timestamp = LocalDateTime.of(publishDate, publishTime);
 ```
-Реализуйте интерфейс `HumanReadableTimestamp`. Напишите функцию, которая принимает на вход отметку времени, а возвращает строку вида:
+Реализуйте интерфейс `HumanReadableTimestamp` [ссылка](https://github.com/EreminD/aqa-course/blob/main/src/main/java/ru/inno/course/date/HumanReadableTimestamp.java). Напишите функцию, которая принимает на вход отметку времени, а возвращает строку вида:
 ``опубликовано X Y назад``, где X - рассчитанный период, а Y – единица времени (минуты|часы|дни)
 
 Требования:
