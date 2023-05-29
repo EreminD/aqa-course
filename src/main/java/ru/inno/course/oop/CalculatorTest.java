@@ -4,11 +4,20 @@ public class CalculatorTest {
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
-        int result = calculator.sum(2, 5);
+        int a = 2;
+
+        double result = 0;
+
+        try {
+            result = calculator.div(a, 0);
+        } catch (ZeroDivideException ex){
+            result = a;
+        }
+
+
+
         System.out.println(result);
 
-        result = calculator.sub(2, 5);
-        System.out.println(result);
 
     }
 }
