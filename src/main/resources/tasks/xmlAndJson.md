@@ -1,7 +1,7 @@
 # Задания
 ## 1. Сервис игроков (JSON)
-- Создайте класс `Player`. Скопируйте [ссылка]()
-- Создайте класс `PlayerServiceJSON`. Класс должен имплементировать методы интерфейса `PlayerService` (ссылка)[]
+- Создайте класс `Player`. Скопируйте [ссылка](https://github.com/EreminD/aqa-course/blob/main/src/main/java/ru/inno/course/serializer/hw/Player.java)
+- Создайте класс `PlayerServiceJSON`. Класс должен имплементировать методы интерфейса `PlayerService` (ссылка)[https://github.com/EreminD/aqa-course/blob/main/src/main/java/ru/inno/course/serializer/hw/PlayerService.java]
 - Программа должна сохранять свое состояние в файл формата JSON
 - Все изменения коллекции сохраняются в файл (файл перезаписывается)
 - Создайте класс `TestClass`. В нем метод `psvm`
