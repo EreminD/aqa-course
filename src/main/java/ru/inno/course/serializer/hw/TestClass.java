@@ -17,7 +17,7 @@ public class TestClass {
             }
 
             @Override
-            public int createPlayer(Player player) {
+            public int createPlayer(String nick) {
                 return 0;
             }
 
