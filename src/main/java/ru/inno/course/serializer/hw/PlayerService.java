@@ -10,7 +10,7 @@ public interface PlayerService {
     Collection<Player> getPlayers();
 
     // создать игрока (возвращает id нового игрока)
-    int createPlayer(Player player);
+    int createPlayer(String nickname);
 
     // удалить игрока по id'шнику, вернет удаленного игрока
     Player deletePlayer(int id);
