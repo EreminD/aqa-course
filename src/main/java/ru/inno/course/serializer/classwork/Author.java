@@ -3,17 +3,20 @@ package ru.inno.course.serializer.classwork;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.util.Objects;
 
-@XmlRootElement
+@XmlRootElement()
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Author {
 
     @JsonProperty("firstName")
+    @XmlElement
     private String name;
     @JsonProperty("lastName")
+    @XmlElement
     private String lastName;
 
     public String getName() {
@@ -47,9 +50,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return "Author{" + "name='" + name + '\'' + ", lastName='" + lastName + '\'' + '}';
     }
 }

@@ -2,23 +2,22 @@ package ru.inno.course.serializer.classwork;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.*;
 
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
-@JsonPropertyOrder({ "rating", "author"})
+@JsonPropertyOrder({"rating", "author"})
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Book {
 
     @JsonProperty("ISBN")
+    @XmlAttribute
     String isbn;
+    @XmlElement
     String title;
-    @XmlElement(name = "authors")
+    @XmlElementWrapper(name = "authors")
+    @XmlElement
     List<Author> author;
 
     int rating = 10;
@@ -69,11 +68,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "isbn='" + isbn + '\'' +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", rating=" + rating +
-                '}';
+        return "Book{" + "isbn='" + isbn + '\'' + ", title='" + title + '\'' + ", author='" + author + '\'' + ", rating=" + rating + '}';
     }
 }

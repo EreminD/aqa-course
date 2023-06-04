@@ -26,13 +26,13 @@ public class PlaygroundXML {
         book.setTitle("12 стульев");
         book.setAuthor(authors);
 
-        JAXBContext context = JAXBContext.newInstance(Book.class);
+        JAXBContext context = JAXBContext.newInstance(Book.class, Author.class);
 
         Marshaller marshaller = context.createMarshaller();
-        marshaller.marshal(book, Path.of("/Users/eremin/Documents/java-projects/myFirstApp/src/main/resources/xml/book.xml").toFile());
+        marshaller.marshal(book, Path.of("/Users/eremin/Documents/java-projects/myFirstApp/src/main/resources/xml/book1.xml").toFile());
 
         Unmarshaller unmarshaller = context.createUnmarshaller();
-        Object o = unmarshaller.unmarshal(Path.of("/Users/eremin/Documents/java-projects/myFirstApp/src/main/resources/xml/book.xml").toFile());
+        Object o = unmarshaller.unmarshal(Path.of("/Users/eremin/Documents/java-projects/myFirstApp/src/main/resources/xml/book1.xml").toFile());
         Book b = (Book) o;
         System.out.println(b);
 
