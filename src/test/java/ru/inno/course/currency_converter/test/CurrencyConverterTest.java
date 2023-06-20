@@ -28,4 +28,11 @@ public class CurrencyConverterTest {
         double amountAsIs = converter.convert(269_40.37, "USD", "BTC");
         assertEquals(amountToBe, amountAsIs);
     }
+    @Test
+    public void shouldConvertDifferentCurrencies() {
+        double amountToBe = 0.6231;
+        double amountAsIs = converter.convert(10, "DOGE", "USD");
+        assertEquals(amountToBe, amountAsIs);
+    }
+
 }
