@@ -34,5 +34,11 @@ public class CurrencyConverterTest {
         double amountAsIs = converter.convert(10, "DOGE", "USD");
         assertEquals(amountToBe, amountAsIs);
     }
+    @Test
+    public void ConvertDifferentCurrencies() {
+        double amountToBe = 826.4;
+        double amountAsIs = converter.convert(20, "XRP", "RUR");
+        assertEquals(amountToBe, amountAsIs);
+    }
 
 }
