@@ -28,5 +28,4 @@ public class CurrencyConverterTest {
         double amountAsIs = converter.convert(269_40.37, "USD", "BTC");
         assertEquals(amountToBe, amountAsIs);
     }
-
 }
