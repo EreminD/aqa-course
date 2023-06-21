@@ -40,5 +40,11 @@ public class CurrencyConverterTest {
         double amountAsIs = converter.convert(20, "XRP", "RUR");
         assertEquals(amountToBe, amountAsIs);
     }
+    @Test
+    public void shouldConvertNonIntegerValueOfCurrencies(){
+        double amountToBe=182_261.82499999998;
+        double amountAsIs=converter.convert(1.25,"ETH","RUR");
+        assertEquals(amountToBe, amountAsIs);
+    }
 
 }
